@@ -1,0 +1,38 @@
+version: "3.9"
+services:
+  db:
+    build:
+      context: ./Database
+      dockerfile: Dockerfile
+    environment:
+      POSTGRES_USERDB: postgres
+      POSTGRES_PASSWORDDB: Nhn@300102
+      POSTGRES_DATABASE: postgres
+      DATABASE_URL: "postgresql://postgres:Nhn@300102@db:5432/postgres"
+    volumes:
+      - db_data:/var/lib/postgresql/data/
+  pgadmin:
+    # image: dpage/pgadmin4
+    image: visionman2002/project_pe_team6:pgadmin
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: root
+    ports:
+      - '5050:80'
+  app:
+    build:
+      context: ./App
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+     SECRET_KEY: nam
+     PASSWORD_KEY: balls
+     INFO_KEY: notballs
+     HOST: localhost
+     PORT: 8000
+    depends_on:
+      - db
+volumes:
+  db_data:

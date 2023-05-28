@@ -1,0 +1,62 @@
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./sign_in.css">
+
+    <title>MedRec</title>
+
+</head>
+
+<body>
+
+    <div class="body-wrapper">
+
+        <div class="logo-space">
+
+            <img src="../img/login-pic-2.jpg" alt="" id="login-pic">
+
+        </div>
+
+        <div class="sign-container">
+
+            <img src="../img/logo.png" alt="" width="150px">
+            <h2>Welcome!</h2>
+
+            <form id="sign-in">
+
+                <div id="user-input">
+
+                    <input title="Username" type="text" id="username" name="username" required>
+                    <span class="floating-label">Username</span>
+
+                </div><br><br>
+
+                <div id="user-input">
+
+                    <input title="Password" type="password" id="password" name="password" required>
+                    <span class="floating-label">Password</span>
+
+                </div><br>
+
+                <span id="message"></span><br><br>
+                <button id="btn-sign-in" type="submit" form="sign-in" value="Submit">Sign In</button><br><br>
+                <hr><br>
+                <span id="noAcc">Don't have an account? <a href="./sign_up.html">SIGN UP</a></span><br><br><br><br>
+
+            </form>
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="sign_in.js"></script>
+
+</body>

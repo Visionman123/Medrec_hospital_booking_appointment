@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="icon" href="../img/logo.png" />
+
+    <!-- Template Main CSS File -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="patient_rec_old.css" />
+
+    <title>Patient Record</title>
+
+</head>
+
+<body>
+
+    <div class="header-space">
+
+        <div class="logo-class">
+
+            <a title="Homepage" href="../2_Doctor_homepage/doc_workCalendar.html"><img src="../img/logo.png" alt=""
+                    class="img-fluid" width="50px"></a>
+            <p>Medical Record</p>
+
+        </div>
+
+        <div>
+
+            <button type="button" id="btn-logout" class="btn-logout-class" title="Logout"> Logout </button>
+
+        </div>
+
+    </div>
+
+    <div id="wrapper">
+
+        <div id="info-top">
+
+            <div id="profile">
+
+                <img title="Profile" id="patient-pht" src="../img/profile.png">
+
+                <div id="patient-basic-info">
+
+                    <label for="fullName">Full name: </label>
+                    <span type="text" id="fullName" name="fullName"></span><br>
+                    <label for="phone">Phone: </label>
+                    <span type="text" id="phone" name="phone"></span>
+
+                </div>
+
+            </div>
+
+            <div id="note-div">
+
+                <h1>Notes</h1>
+                <span type="text" id="notes"></span>
+
+            </div>
+
+        </div>
+
+        <div id="info-space">
+
+            <div class="info-space-left">
+
+                <div class="personal">
+
+                    <h1>Personal Information</h1>
+
+                    <div class="patient-info">
+
+                        <label for="lastName">Last name: </label>
+                        <span type="text" id="lastName" name="lastName"></span><br>
+                        <label for="firstName">First name: </label>
+                        <span type="text" id="firstName" name="firstName"></span><br>
+                        <label for="address">Address: </label>
+                        <span type="text" id="address" name="address"></span><br>
+                        <label for="dateOfBirth">Date of birth: </label>
+                        <span type="text" id="dateOfBirth" name="dateOfBirth"></span><br>
+                        <label for="sex">Sex: </label>
+                        <span type="text" id="sex" name="sex"></span>
+
+                    </div>
+
+                </div><br>
+
+                <div id="history-div">
+
+                    <h1>History</h1>
+
+                    <table id="history" class="table">
+
+                        <thead>
+
+                            <tr>
+                                <th class="tab-date">Date</th>
+                                <th>Diagnosis</th>
+                                <th>Doctor</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td id="pres-date"></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+            <div class="vertical-line" id="line"></div>
+
+            <div class="info-space-right">
+
+                <h1>Diagnosis</h1>
+
+                <div class="diagnosis">
+
+                    <span id="diag"></span>
+
+                </div>
+
+                <h1 id="indications-head">Indications</h1>
+
+                <div class="indication">
+
+                    <span id="indication"></span>
+
+                </div>
+
+                <div class="prescription">
+
+                    <h1>Prescription</h1>
+
+                    <table id="prescription" class="table">
+
+                        <thead>
+
+                            <tr>
+                                <th id="drug">Drug</th>
+                                <th>Purpose</th>
+                                <th>Dosage</th>
+                                <th>Method</th>
+                                <th>Time</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td id="drug"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="patient_rec_old.js"></script>
+    
+</body>
+
+</html>

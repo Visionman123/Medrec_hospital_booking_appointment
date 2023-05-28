@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <link rel="icon" href="../img/logo.png" />
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="doc_workCalendar.css" />
+
+  <title>Work Calendar</title>
+  
+</head>
+
+<!-- Header-->
+
+<body>
+
+  <div class="header-space">
+
+    <div class="logo-class">
+
+        <a title="Homepage" href="../2_Doctor_homepage/doc_workCalendar.html"><img src="../img/logo.png" alt=""
+                class="img-fluid" width="50px"></a>
+        <p>Medical Record</p>
+
+    </div>
+
+    <div>
+
+        <button type="button" id="btn-logout" class="btn-logout-class" title="Logout"> Logout </button>
+
+    </div>
+
+</div>
+
+  <h3 class="work-header" id="greetings"></h3>
+  <h6 class="work-header" id="notification"></h6><br><br>
+
+  <div class="wrapper">
+
+    <div id="appointments">
+
+      <input type="radio" id="upcoming-app" name="appointments" title="Upcoming Appointments"></input>
+      <label id="app" for="upcoming-app">Upcoming Appointments</label>
+     
+      <input type="radio" id="past-app" name="appointments" title="Past Appointments"></input>
+      <label id="app" for="past-app">Past Appointments</label>
+
+    </div>
+
+    <!--Table-->
+    <div id="box">
+      <table class="table" id="calendar">
+
+        <tr>
+          <th>Appointment</th>
+          <th>Patient Name</th>
+        </tr>
+
+      </table>
+
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="doc_workCalendar.js"> </script>
+
+</body>
+
+</html>

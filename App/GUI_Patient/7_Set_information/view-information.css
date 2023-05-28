@@ -1,0 +1,168 @@
+body {
+  background-image: url(../img/blue-gradient.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+label {
+  font-size: small;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+input {
+  height: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+input:hover {
+  cursor: default;
+}
+
+textarea {
+  width: 100%;
+  height: 35%;
+  resize: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+textarea:hover {
+  cursor: default;
+}
+
+.wrapper {
+  height: 80%;
+  margin-top: 7%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  padding: 5px;
+  text-align: center;
+  color: black;
+  border: none;
+  padding-bottom: 20%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.profile-area {
+  display: flex;
+  left: 10%;
+}
+
+.profile-area p {
+  text-align: left;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: small;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.img-design {
+  width: 100px;
+}
+
+.info-top {
+  padding-top: 0%;
+  columns: 2;
+  height: auto;
+  width: 500px;
+  text-align: left;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.info-middle {
+  margin-top: 20px;
+  columns: 3;
+  height: auto;
+  width: 500px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.info-bottom {
+  height: auto;
+  width: 500px;
+  text-align: left;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 15px;
+}
+
+.btn-edit {
+  font-family: "Poppins", sans-serif;
+  font-size: large;
+  border-radius: 10px;
+  border: none;
+  background-color: #0097b2;
+  color: white;
+  width: 30%;
+  height: 10%;
+  font-size: 15px;
+}
+
+#fname,
+#lname,
+#email,
+#address {
+  width: 100%;
+  height: 32px;
+}
+
+#tel {
+  width: 140px;
+  height: 32px;
+}
+
+#dob {
+  height: 32px;
+}
+
+#gender {
+  width: 45%;
+  height: 32px;
+  line-height: 30px;
+  text-align: center;
+  font-size: medium;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: all 0.5s;
+  color: black;
+  font-weight: unset;
+}
+
+#female,
+#male {
+  opacity: 0;
+  width: 1;
+}
+
+#female:checked + #gender,
+#male:checked + #gender {
+  background: #0097b2;
+  box-shadow: 0 0 10px #7acde6;
+  color: white;
+  cursor: default;
+}
+
+#male:disabled + label,
+#female:disabled + label {
+  opacity: 50%;
+  border: 1px solid black;
+  cursor: default;
+}
+
+#btn-edit:hover {
+  background-color: #28a9c3;
+  color: white;
+}

@@ -1,0 +1,124 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.logo-space {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#login-pic {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 60%;
+  place-self: left;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  opacity: 80%;
+}
+
+.sign-container {
+  display: flex;
+  position: fixed;
+  height: 100%;
+  width: 40%;
+  right: 0;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sign-container h2 {
+  font-weight: 800;
+}
+
+.sign-container input {
+  width: 300px;
+  height: 35px;
+  border-radius: 7px;
+  border: 1px solid black;
+}
+
+.sign-container input:focus {
+  outline: none !important;
+  border-color: #0097b2;
+  box-shadow: 1px 2px 3px #7acde6;
+}
+
+.sign-container #button {
+  display: inline-flex;
+  align-content: flex-start;
+  justify-content: center;
+  width: 50%;
+  border-radius: 10px;
+}
+
+#logo {
+  width: 150px;
+}
+
+#user-input {
+  position: relative;
+}
+
+.floating-label {
+  padding-left: 5px;
+  padding-right: 5px;
+  position: absolute;
+  pointer-events: none;
+  top: 8px;
+  left: 10px;
+  transition: 0.2s ease all;
+  background-color: white;
+  opacity: 40%;
+}
+
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label {
+  top: -7px;
+  left: 10px;
+  font-size: 13px;
+  opacity: 1;
+  color: #0097b2;
+}
+
+#message {
+  color: red;
+}
+
+#btn-sign-up {
+  border: none;
+  width: 300px;
+  height: 35px;
+  border-radius: 7px;
+  background-color: #0097b2;
+  color: white;
+}
+
+#btn-sign-up:hover {
+  background-color: #28a9c3;
+  cursor: pointer;
+  box-shadow: 0 0 10px #7acde6;
+}
+
+#sign-in-href {
+  color: #0097b2;
+  text-decoration: none;
+}
+
+.error {
+  border: solid red 1px !important ;
+}

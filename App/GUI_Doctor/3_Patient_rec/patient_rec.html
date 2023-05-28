@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logo.png" />
+    <title>Patient Medical Record</title>
+    <link rel="stylesheet" href="patient_rec.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="header-space">
+
+        <div class="logo-class">
+
+            <a title="Homepage" href="../2_Doctor_homepage/doc_workCalendar.html"><img src="../img/logo.png" alt=""
+                    class="img-fluid" width="50px"></a>
+            <p style="font-weight: bold;">Medical Record</p>
+
+        </div>
+
+        <div>
+
+            <button type="button" id="btn-logout" class="btn-logout-class" title="Logout"> Logout </button>
+
+        </div>
+
+    </div>
+
+    <div id="wrapper">
+        <div id="info-top">
+            <div id="profile">
+                <img id="patient-pht" src="../img/profile.png">
+                <div id="patient-basic-info">
+                    <label for="fullname">Full name: </label>
+                    <span type="text" id="fullname" name="fullname"></span><br>
+                    <label for="phone">Phone: </label>
+                    <span type="text" id="phone" name="phone"></span>
+                </div>
+            </div>
+            <div id="notediv">
+                <h1>Notes</h1>
+                <span type="text" id="notes"></span>
+            </div>
+        </div>
+
+        <div id="info-space">
+            <div class="info-space-left">
+                <div class="personal">
+                    <h1>Personal Information</h1>
+                    <div class="patient-info">
+
+                        <label for="lastname">Last name: </label>
+                        <span type="text" id="lastname" name="lastname"></span>
+                        <br>
+                        <label for="firstname">First name: </label>
+                        <span type="text" id="firstname" name="firstname"></span>
+                        <br>
+                        <label for="address">Address: </label>
+                        <span type="text" id="address" name="address"></span>
+                        <br>
+                        <label for="dateofbirth">Date of birth: </label>
+                        <span type="text" id="dateofbirth" name="dateofbirth"></span>
+                        <br>
+                        <label for="sex">Sex: </label>
+                        <span type="text" id="sex" name="sex"></span>
+
+
+                    </div>
+
+                </div>
+
+                <br>
+
+                <div id="historydiv">
+                    <h1>History</h1>
+                    <table id="history" class="table">
+                        <thead>
+                            <tr>
+                                <th class="tab-date">Date</th>
+                                <th>Diagnosis</th>
+                                <th>Doctor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="pres-date"></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="vertical-line" id="line"></div>
+
+            <div class="info-space-right">
+                <h1>Diagnosis</h1>
+
+                <div class="diagnosis">
+                    <textarea type="text" id="diag" maxlength="150"></textarea>
+                </div>
+
+                <h1 id="indi-head">Indications</h1>
+                <div class="indication">
+                    <textarea type="text" id="indication" maxlength="150"></textarea>
+                </div>
+                </form>
+                <div class="prescription">
+                    <h1>Prescription</h1>
+                    <table id="prescription" class="table">
+                        <thead>
+                            <tr>
+                                <th id="drug">Drug</th>
+                                <th>Purpose</th>
+                                <th>Dosage</th>
+                                <th>Method</th>
+                                <th>Time</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                    <div id="btn-group">
+                        <div>
+                            <button id="add-btn">+</button>
+                            <button id="del-btn">-</button>
+                        </div>
+                        <div>
+                            <button id="save-btn" type="submit" value="Submit">Save</button>
+                            <button id="print-btn">Print prescription</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.js"></script>
+        <script src="patient_rec.js"></script>
+</body>
+
+</html>

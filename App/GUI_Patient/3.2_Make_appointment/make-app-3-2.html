@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- <link rel="stylesheet" href="../2_Homepage/assets/css/style.css"> -->
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../2_Homepage/assets/img/favicon.png" rel="icon">
+  <link href="../2_Homepage/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <!-- <link href="../2_Homepage/assets/vendor/aos/aos.css" rel="stylesheet"> -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="../2_Homepage/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../2_Homepage/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../2_Homepage/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../2_Homepage/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../2_Homepage/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../2_Homepage/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../2_Homepage/assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="make-app-3-2.css">
+  <title>Appointment</title>
+
+</head>
+
+<body>
+
+  <!-- header-->
+  <header id="header" class="fixed-top d-flex align-items-center">
+
+    <div class="container">
+
+      <div class="header-container d-flex align-items-center justify-content-between">
+
+        <div class="logo">
+
+          <a title="Homepage" href="../2_Homepage/homepage.html"><img src="../2_Homepage/assets/img/logo.png" alt=""
+              class="img-fluid"></a>
+        </div>
+
+        <nav id="navbar" class="navbar">
+
+          <ul>
+
+            <li><a class="nav-link scrollto active" href="../2_Homepage/homepage.html">Home</a></li>
+            <li><a class="nav-link scrollto" href="../4_Review_appointment/review.html">Appointment</a></li>
+            <li><a class="nav-link scrollto " href="../7_Set_information/view-information.html">Personal Information</a>
+            </li>
+            <li><a class="nav-link scrollto" href="../5_Record/rec.html">Patient Records</a></li>
+            <li><a id="logout-btn" class="nav-link scrollto" href="/GUI_Doctor/1_Login_screen/sign_in.html">Logout</a>
+            </li>
+            <li><a class="getstarted scrollto" href="../3.2_Make_appointment/make-app-3-2.html">Book an appointment</a>
+            </li>
+
+          </ul>
+
+          <i class="bi bi-list mobile-nav-toggle"></i>
+
+        </nav><!-- .navbar -->
+
+      </div><!-- End Header Container -->
+
+    </div>
+
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container text-center position-relative">
+
+      <h1>Make An Appointment</h1>
+
+      <div class="wrapper">
+
+        <div class="make-app">
+
+          <select title="Department" class="department" name="department" id="department">
+
+            <option value="" disabled selected> Department</option>
+
+          </select><br>
+
+          <select title="Doctor" name="doctor" id="doctor">
+
+            <option value="" disabled selected>Doctor</option>
+
+          </select><br>
+
+          <input title="Date" type="date" id="date" name="date"><br>
+
+          <div class="time-check-box">
+            
+            <form id="time">
+
+              <input type="radio" id="time1" name="time" value="08:30:00">
+              <label for="time1"> 08:30 </label><br>
+              <input type="radio" id="time2" name="time" value="09:00:00">
+              <label for="time2"> 09:00 </label><br>
+              <input type="radio" id="time3" name="time" value="09:30:00">
+              <label for="time3"> 09:30 </label><br>
+              <input type="radio" id="time4" name="time" value="10:00:00">
+              <label for="time4"> 10:00 </label><br>
+              <input type="radio" id="time5" name="time" value="10:30:00">
+              <label for="time5"> 10:30 </label><br>
+              <input type="radio" id="time6" name="time" value="11:00:00">
+              <label for="time6"> 11:00 </label><br>
+              <input type="radio" id="time7" name="time" value="11:30:00">
+              <label for="time7"> 11:30 </label><br>
+              <input type="radio" id="time8" name="time" value="13:00:00">
+              <label for="time8"> 13:00 </label><br>
+              <input type="radio" id="time9" name="time" value="13:30:00">
+              <label for="time9"> 13:30 </label><br>
+              <input type="radio" id="time10" name="time" value="14:00:00">
+              <label for="time10"> 14:00 </label><br>
+              <input type="radio" id="time11" name="time" value="14:30:00">
+              <label for="time11"> 14:30 </label><br>
+              <input type="radio" id="time12" name="time" value="15:00:00">
+              <label for="time12"> 15:00 </label><br>
+              <input type="radio" id="time13" name="time" value="15:30:00">
+              <label for="time13"> 15:30 </label><br>
+              <input type="radio" id="time14" name="time" value="16:00:00">
+              <label for="time14"> 16:00 </label><br>
+              <input type="radio" id="time15" name="time" value="16:30:00">
+              <label for="time15"> 16:30 </label><br>
+
+            </form>
+
+          </div><br>
+
+          <button type="button" id="btn-make-app">Make Appointment</button>
+          <span id="message"></span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section><!-- End Hero -->
+
+  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="make-app-3-2.js"> </script>
+
+</body>
+
+</html>

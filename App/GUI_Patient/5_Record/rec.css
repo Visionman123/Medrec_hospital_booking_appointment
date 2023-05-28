@@ -1,0 +1,53 @@
+body {
+  background-image: url(../img/blue-gradient.png);
+  background-size: cover;
+}
+
+body:before {
+  content: "";
+ 
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#record-div {
+  margin-top: 10%;
+  text-align: center;
+  display: flex;
+  height: 500px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  position: relative;
+  color: white;
+  margin-bottom: 50px;
+}
+
+#pat-record {
+  position: relative;
+  color: white;
+  display: block;
+  width: 90%;
+  height: auto;
+  max-height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  overflow-y: auto;
+}
+
+tr {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+ font-size: larger;
+}
+
+tr:hover {
+  background-color: rgb(108, 108, 108);
+}

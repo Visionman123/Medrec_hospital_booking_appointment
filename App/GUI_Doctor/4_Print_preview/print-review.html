@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./print-review-style.css">
+    <link rel="icon" href="../img/logo.png">
+
+    <title>Print Preview</title>
+
+</head>
+
+<body>
+
+        <div class="wrapper">
+
+            <button type="button" class="btn-print" id="btn-print">Print</button>
+            
+        </div>
+
+        <div class="print-page">
+
+            <div class="print-page-logo">
+
+                <img id="logo" src="../img/logo.png" alt="">
+                <p class="app-name"> Medical Record </p>
+
+                <div class="title">
+
+                    <h1>Prescription</h1>
+
+                </div>
+
+            </div>
+
+            <div class="info-box">
+
+                    <label for="tel">Tel:</label>
+                    <span id="tel"></span><br>
+
+                    <label for="name">Name:</label>
+                    <span id="name"></span><br>
+
+                    <label for="address">Address:</label>
+                    <span id="add"></span><br>
+
+                    <label for="sex">Sex:</label>
+                    <span id="sex"></span><br>
+
+                    <label for="dob">DoB:</label>
+                    <span id="dob"></span><br>
+
+            </div><br>
+
+            <div class="info-box-diag">
+
+                    <label for="diag">Diagnosis:</label>
+                    <span id="diag"></span><br>
+
+            </div><br>
+
+                <table class="prescript-table" id="prescript-table">
+
+                    <tr>
+                        <th class="header-col-1"></th>
+                        <th class="header-col-2"> Drug</th>
+                        <th class="header-col-3"> Purpose</th>
+                        <th class="header-col-4"> Dosage</th>
+                        <th class="header-col-5"> Method</th>
+                        <th class="header-col-6"> Time</th>
+                    </tr>
+
+                </table>
+
+            <div class="doc-info-box">
+
+                <label for="doc-name">Doctor's name: </label>
+                <span id="doc-name"></span><br>
+
+                <label for="doc-tel">Doctor's tel: </label>
+                <span id="doc-tel"></span><br>
+
+                <label for="doc-email">Doctor's email: </label>
+                <span id="doc-email"></span><br>
+
+            </div>
+
+            <p id="doc-sig">Doctor's Signature</p>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="./print-review.js"></script>
+        
+    </body>
+
+</html>

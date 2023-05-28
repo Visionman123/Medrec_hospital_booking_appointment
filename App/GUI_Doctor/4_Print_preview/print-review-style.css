@@ -1,0 +1,132 @@
+.wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.btn-print {
+  border: 1px;
+  border-radius: 10px;
+  color: initial;
+  height: 30px;
+  width: 70px;
+  background-color: #0097b2;
+  color: white;
+  font-size: larger;
+}
+
+.btn-print:hover {
+  background-color: #28a9c3;
+  cursor: pointer;
+}
+
+.print-page {
+  padding: 30px 70px 30px 50px;
+  width: 148.5mm;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  box-shadow: 3px 3px 7px rgb(80 78 78 / 50%);
+  height: 210mm;
+  display: flex;
+  flex-direction: column;
+}
+
+.print-page-logo {
+  height: 60px;
+  display: flex;
+}
+
+#logo {
+  width: 60px;
+  height: 60px;
+}
+
+.app-name {
+  font-family: Impact, "Arial Narrow Bold", sans-serif;
+  margin-top: 5%;
+}
+
+.title {
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.info-box {
+  border: 1px solid black;
+  width: 100%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10%;
+  padding-left: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  column-count: 2;
+}
+
+.info-box-diag {
+  border: 1px solid black;
+  width: 100%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  column-count: 2;
+}
+
+.prescript-table {
+  width: 103%;
+  border-collapse: collapse;
+}
+
+.header-col-1 {
+  width: 5%;
+}
+
+.header-col-2,
+.header-col-3,
+.header-col-4,
+.header-col-5 {
+  width: 20%;
+}
+
+th {
+  border: 1px solid black;
+  font-size: smaller;
+  text-align: center;
+}
+
+td {
+  border: 1px solid black;
+  font-size: smaller;
+}
+
+.doc-info-box {
+  border: 1px solid black;
+  width: 100%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20%;
+  padding-left: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: smaller;
+  text-align: left;
+  columns: 2;
+}
+
+#doc-sig {
+  text-align: end;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .print-page * {
+    visibility: visible;
+  }
+}

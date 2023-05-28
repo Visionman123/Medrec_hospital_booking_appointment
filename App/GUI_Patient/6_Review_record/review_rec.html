@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicons -->
+    <link href="../2_Homepage/assets/img/favicon.png" rel="icon">
+    <link href="../2_Homepage/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../2_Homepage/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../2_Homepage/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../2_Homepage/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../2_Homepage/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../2_Homepage/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../2_Homepage/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../2_Homepage/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="../2_Homepage/assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="review_rec.css" />
+
+    <title>Record</title>
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+
+        <div class="container">
+
+            <div class="header-container d-flex align-items-center justify-content-between">
+
+                <div class="logo">
+
+                    <a title="Homepage" href="../2_Homepage/homepage.html"><img src="../2_Homepage/assets/img/logo.png"
+                            alt="" class="img-fluid"></a>
+
+                </div>
+
+                <nav id="navbar" class="navbar">
+                    <ul>
+
+                        <li><a class="nav-link scrollto active" href="../2_Homepage/homepage.html">Home</a></li>
+                        <li><a class="nav-link scrollto" href="../4_Review_appointment/review.html">Appointment</a></li>
+                        <li><a class="nav-link scrollto " href="../7_Set_information/view-information.html">Personal
+                                Information</a></li>
+                        <li><a class="nav-link scrollto" href="../5_Record/rec.html">Patient Records</a></li>
+                        <li><a id="logout-btn" class="nav-link scrollto"
+                                href="/GUI_Doctor/1_Login_screen/sign_in.html">Logout</a></li>
+                        <li><a class="getstarted scrollto" href="../3.2_Make_appointment/make-app-3-2.html">Book an
+                                appointment</a></li>
+
+                    </ul>
+
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+
+                </nav><!-- .navbar -->
+
+            </div><!-- End Header Container -->
+
+        </div>
+
+    </header><!-- End Header -->
+
+    <div id="wrapper">
+
+        <div id="info-top">
+
+            <div id="profile">
+
+                <img alt="" id="patient-pht" src="../img/profile.png">
+
+                <div id="patient-basic-info">
+
+                    <label for="fullName">Full name: </label>
+                    <span type="text" id="fullName" name="fullName"></span><br>
+                    <label for="phone">Phone: </label>
+                    <span type="text" id="phone" name="phone"></span>
+
+                </div>
+
+            </div>
+
+            <div id="note-div">
+                
+                <h1>Notes</h1>
+                <span type="text" id="notes"></span>
+
+            </div>
+
+        </div>
+
+        <div id="info-space">
+
+            <div class="info-space-left">
+
+                <div class="personal">
+
+                    <h1>Personal Information</h1>
+
+                    <div class="patient-info">
+
+                        <label for="lastName">Last name: </label>
+                        <span type="text" id="lastName" name="lastName"></span><br>
+                        <label for="firstName">First name: </label>
+                        <span type="text" id="firstName" name="firstName"></span><br>
+                        <label for="address">Address: </label>
+                        <span type="text" id="address" name="address"></span><br>
+                        <label for="dateOfBirth">Date of birth: </label>
+                        <span type="text" id="dateOfBirth" name="dateOfBirth"></span><br>
+                        <label for="sex">Sex: </label>
+                        <span type="text" id="sex" name="sex"></span>
+
+                    </div>
+
+                </div><br>
+
+                <div id="history-div">
+
+                    <h1>History</h1>
+
+                    <table id="history" class="table">
+
+                        <thead>
+
+                            <tr>
+                                <th class="tab-date">Date</th>
+                                <th>Diagnosis</th>
+                                <th>Doctor</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td id="pres-date"></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+            <div class="vertical-line" id="line"></div>
+
+            <div class="info-space-right">
+
+                <h1>Diagnosis</h1>
+
+                <div class="diagnosis">
+
+                    <span id="diag"></span>
+
+                </div>
+
+                <h1 id="indication-head">Indications</h1>
+
+                <div class="indication">
+
+                    <span id="indication"></span>
+
+                </div>
+
+                </form>
+
+                <div class="prescription">
+
+                    <h1>Prescription</h1>
+
+                    <table id="prescription" class="table">
+
+                        <thead>
+
+                            <tr>
+                                <th id="drug">Drug</th>
+                                <th>Purpose</th>
+                                <th>Dosage</th>
+                                <th>Method</th>
+                                <th>Time</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td id="drug"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="review_rec.js"></script>
+
+</body>
+
+</html>

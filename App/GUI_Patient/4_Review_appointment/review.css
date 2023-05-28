@@ -1,0 +1,52 @@
+body {
+  background-image: url(../img/blue-gradient.png);
+  background-size: cover;
+
+}
+
+
+
+.wrapper {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+
+}
+
+#table-app {
+  display: block;
+  width: 90%;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+h1 {
+  color: white;
+}
+
+th {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+}
+
+tr {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+
+}
+
+td {
+
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: larger;
+}

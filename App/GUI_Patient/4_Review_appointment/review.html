@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Vendor CSS Files -->
+  <link href="../2_Homepage/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../2_Homepage/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../2_Homepage/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../2_Homepage/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../2_Homepage/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../2_Homepage/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../2_Homepage/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+ 
+  <link href="../2_Homepage/assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="review.css">
+  
+  <link rel="icon" href="../img/logo.png">
+
+  <title>Your Appointments</title>
+
+</head>
+
+<body>
+  <!-- header-->
+  <header id="header" class="fixed-top d-flex align-items-center">
+
+    <div class="container">
+
+      <div class="header-container d-flex align-items-center justify-content-between">
+
+        <div class="logo">
+
+          <a title="Homepage" href="../2_Homepage/homepage.html"><img src="../2_Homepage/assets/img/logo.png" alt=""
+              class="img-fluid" ></a>
+
+        </div>
+
+        <nav id="navbar" class="navbar">
+
+          <ul>
+
+            <li><a class="nav-link scrollto active" href="../2_Homepage/homepage.html">Home</a></li>
+            <li><a class="nav-link scrollto" href="../4_Review_appointment/review.html">Appointment</a></li>
+            <li><a class="nav-link scrollto " href="../7_Set_information/view-information.html">Personal Information</a>
+            </li>
+            <li><a class="nav-link scrollto" href="../5_Record/rec.html">Patient Records</a></li>
+            <li><a id="logout-btn" class="nav-link scrollto" href="/GUI_Doctor/1_Login_screen/sign_in.html">Logout</a>
+            </li>
+            <li><a class="getstarted scrollto" href="../3.2_Make_appointment/make-app-3-2.html">Book an appointment</a>
+            </li>
+
+          </ul>
+
+          <i class="bi bi-list mobile-nav-toggle"></i>
+
+        </nav><!-- .navbar -->
+
+      </div><!-- End Header Container -->
+
+    </div>
+
+  </header><!-- End Header -->
+
+  <div class="wrapper">
+
+    <h1>Your Appointment</h1>
+
+    <table class="table" id="table-app">
+
+      <tr>
+        <th class="th-col-1">Doctor</th>
+        <th class="th-col-2">Date</th>
+        <th class="th-col-3">Time</th>
+        <th class="th-col-4">Room</th>
+      </tr>
+     
+    </table>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="review.js"></script>
+
+</body>
+
+</html>
