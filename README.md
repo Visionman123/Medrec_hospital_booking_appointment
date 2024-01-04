@@ -13,7 +13,7 @@
 For efficient task management and collaboration, our team utilizes Notion as our primary platform. You can find more details about our project progress, task assignments, and documentation by accessing our Notion workspace at [Notion vgupe2023_team6](https://www.notion.so/Teamspace-Home-5979b532bd224c6bbb6cdd5f7af3f2c6).
  
 <div align="center">
-<img src="../report/img/hospital.jpg" alt="Hospital" width="600"/>
+<img src="report/img/hospital.jpg" alt="Hospital" width="600"/>
 </div>
 
 # Table of Content
@@ -134,7 +134,7 @@ The system implements the OAuth2 framework in conjunction with JWT, ensuring sec
 Furthermore, the system adheres to relevant regulations and standards outlined by HIPAA, including the secure handling and storage of patient data. By implementing encryption, authentication, and access control measures, the system ensures that patient data remains confidential and protected from unauthorized access.
 
 <div align="center">
-<img src="../report/img/InformationArchitecture.png" alt="Informtion Architecture" width="600" height="400"/>
+<img src="report/img/InformationArchitecture.png" alt="Informtion Architecture" width="600" height="400"/>
 </div>
 
 ## 2.3 User Interface Issues
@@ -154,45 +154,45 @@ Addressing these UI issues can result in a user-friendly and efficient booking a
 ## 2.4 Analysis Model
 ### 2.4.1 Use case diagram
 <div align="center">
-<img src="../report/img/UseCase.png" alt="Use Case Diagram" width="800" height="500"/>
+<img src = "report/img/UseCase.png" alt="Use Case Diagram" width="800" height="500"/>
 </div>
 
 ### 2.4.2 Sequence diagram
 1. **Doctor:**
 <div align="center">
-<img src="../report/img/SequenceDoctor.png" alt="Doctor Sequence Diagram" width="600" height="400"/>
+<img src="report/img/SequenceDoctor.png" alt="Doctor Sequence Diagram" width="600" height="400"/>
 </div>
 
 2. **Patient:**
 <div align="center">
-<img src="../report/img/SequencePatient.png" alt="Patient Sequence Diagram" width="600" height="400"/>
+<img src="report/img/SequencePatient.png" alt="Patient Sequence Diagram" width="600" height="400"/>
 </div>
 
 ### 2.4.3 Class diagram
 <div align="center">
-<img src="../report/img/ClassDiagram.png" alt="Class Diagram" width="500" height="700"/>
+<img src="report/img/ClassDiagram.png" alt="Class Diagram" width="500" height="700"/>
 </div>
 
 ### 2.4.4 ER diagram
 <div align="center">
-<img src="../report/img/ERDiagram.png" alt="ER Diagram" width="800" height="500"/>
+<img src="report/img/ERDiagram.png" alt="ER Diagram" width="800" height="500"/>
 </div>
 
 # 3. External Interface Requirements
 ## User flow
 ### Flow for doctor
 <div align="center">
-<img src="../report/img/UserFlowDoctor.png" alt="User Flow Doctor" width="600" height="300"/>
+<img src="report/img/UserFlowDoctor.png" alt="User Flow Doctor" width="600" height="300"/>
 </div>
 
 ### Flow for patient
 <div align="center">
-<img src="../report/img/UserFlowPatient.png" alt="User Flow Patient" width="600" height="400"/>
+<img src="report/img/UserFlowPatient.png" alt="User Flow Patient" width="600" height="400"/>
 </div>
 
 ## 3.1 Description of Login Screen
 <div align="center">
-<img src="../report/img/3_1_gif.gif" alt="Login Screen" width="600">
+<img src="report/img/3_1_gif.gif" alt="Login Screen" width="600">
 </div>
 <table style="width: 500px;">
   <tr>
@@ -235,7 +235,7 @@ Addressing these UI issues can result in a user-friendly and efficient booking a
 
 ## 3.2 Description of Doctor Homepage 
 <div align="center">
-<img src="../report/img/3_2_gif.gif" alt="Doctor Homepage" width="600">
+<img src="report/img/3_2_gif.gif" alt="Doctor Homepage" width="600">
 </div>
 <table style="width: 500px;">
   <tr>
@@ -278,7 +278,7 @@ Addressing these UI issues can result in a user-friendly and efficient booking a
 
 ## 3.3 Description of Treatment 
 <div align="center">
-<img src="../report/img/3_3_gif.gif" alt="Treatment" width="600">
+<img src="report/img/3_3_gif.gif" alt="Treatment" width="600">
 </div>
 <table style="width: 500px;">
   <tr>
@@ -321,7 +321,7 @@ Addressing these UI issues can result in a user-friendly and efficient booking a
 
 ## 3.4 Description of Patient Homepage 
 <div align="center">
-<img src="../report/img/3_4_gif.gif" alt="Patient Homepage" width="600">
+<img src="report/img/3_4_gif.gif" alt="Patient Homepage" width="600">
 </div>
 <table style="width: 500px;">
   <tr>
@@ -364,7 +364,7 @@ Addressing these UI issues can result in a user-friendly and efficient booking a
 
 ## 3.5 Description of Appointment Booking 
 <div align="center">
-<img src="../report/img/3_5_gif.gif" alt="Appointment Booking" width="600">
+<img src="report/img/3_5_gif.gif" alt="Appointment Booking" width="600">
 </div>
 <table style="width: 500px;">
   <tr>
@@ -407,7 +407,7 @@ Addressing these UI issues can result in a user-friendly and efficient booking a
 
 ## 3.6 Description of Review Record
 <div align="center">
-<img src="../report/img/3_6_gif.gif" alt="Review Record" width="600">
+<img src="report/img/3_6_gif.gif" alt="Review Record" width="600">
 </div>
 <table style="width: 500px;">
   <tr>
@@ -450,7 +450,7 @@ Addressing these UI issues can result in a user-friendly and efficient booking a
 
 ## 3.7 Description of Set Patient Information 
 <div align="center">
-<img src="../report/img/3_7_gif.gif" alt="Set Patient Information" width="600">
+<img src="report/img/3_7_gif.gif" alt="Set Patient Information" width="600">
 </div>
 <table style="width: 500px;">
   <tr>
@@ -495,13 +495,13 @@ Addressing these UI issues can result in a user-friendly and efficient booking a
 During the development of the booking appointment system for hospitals, there were several design decisions and tradeoffs that needed to be made. The following are some of the key decisions and tradeoffs:
 ## 4.1 User Interface Design
 <div align="center">
-<img src="../report/img/ScreenRelationship.png" alt="Screen Relationship" width="600" height="400"/>
+<img src="report/img/ScreenRelationship.png" alt="Screen Relationship" width="600" height="400"/>
 </div>
 
 One of the key design decisions was the user interface design. The system needed to be user-friendly and intuitive to use for both patients and healthcare providers. The design team opted for a simple and clean design with clear navigation and easy-to-use forms. However, this simplicity meant that some advanced features, such as customization options for appointment scheduling, had to be sacrificed.
 ### 4.1.1 Logo Design Concept
 <div align="center">
-<img src="../report/img/Logo.png" alt="Screen Relationship" width="400"/>
+<img src="report/img/Logo.png" alt="Screen Relationship" width="400"/>
 </div>
 
 In our medical app, we have a distinctive team logo that embodies our brand identity and represents our commitment to delivering efficient and reliable healthcare services. The logo features a blue circle, symbolizing trust, stability, and professionalism. Inside the circle, there is a white folder, symbolizing organization and the secure storage of patient information.
@@ -524,7 +524,7 @@ For our application, we have carefully chosen fonts to enhance readability and c
 By combining these fonts, we create a harmonious and visually appealing typography throughout our application, enhancing the overall user experience.
 ### 4.1.3 Color Theme
 <div align="center">
-<img src="../report/img/ColorTheme.png" alt="Color Theme" width="600"/>
+<img src="report/img/ColorTheme.png" alt="Color Theme" width="600"/>
 </div>
 
 The color theme for our application is designed to create a visually pleasing and cohesive user interface. The primary color used throughout the application is #0097B2, a vibrant blue shade that represents trust and professionalism in the medical field.
@@ -574,32 +574,32 @@ The HMS database schema consists of EIGHT tables: hms_user, doctor, department, 
 ### 4.3.2 Table Description
 - **User:** Each doctor and patient is given an **ID** and **password**
 <div align="center">
-<img src="../report/img/TableHMSUser.png" alt="Table hms_user" width="600"/>
+<img src="report/img/TableHMSUser.png" alt="Table hms_user" width="600"/>
 </div>
 
 - **Patient:**
 <div align="center">
-<img src="../report/img/TablePatient.png" alt="Table patient" width="600"/>
+<img src="report/img/TablePatient.png" alt="Table patient" width="600"/>
 </div>
 
 - **Doctor:** 
 <div align="center">
-<img src="../report/img/TableDoctor.png" alt="Table doctor" width="600"/>
+<img src="report/img/TableDoctor.png" alt="Table doctor" width="600"/>
 </div>
 
 - **Appointment:**
 <div align="center">
-<img src="../report/img/TableAppointment.png" alt="Table appointment" width="600"/>
+<img src="report/img/TableAppointment.png" alt="Table appointment" width="600"/>
 </div>
 
 - **Prescription:** Contains the essential information of an appointment. Added an extra “note” column for allergies and pre-medication conditions.
 <div align="center">
-<img src="../report/img/TablePrescription.png" alt="Table prescription" width="600"/>
+<img src="report/img/TablePrescription.png" alt="Table prescription" width="600"/>
 </div>
 
 - **Pres_med:** Contained in the prescription table of medical record.
 <div align="center">
-<img src="../report/img/TablePresMed.png" alt="Table pres_med" width="600"/>
+<img src="report/img/TablePresMed.png" alt="Table pres_med" width="600"/>
 </div>
 
 ## 4.4 Tradeoffs
@@ -611,7 +611,7 @@ In our project, we have integrated Docker and CI/CD (Continuous Integration and 
 ## 5.1 Docker
 Docker is a containerization platform that allows us to package our application and its dependencies into lightweight, portable containers.
 <div align="center">
-<img src="../report/img/Docker.png" alt="Docker" width="600"/>
+<img src="report/img/Docker.png" alt="Docker" width="600"/>
 </div>
 
 1. **App Container:**
@@ -638,14 +638,14 @@ There are two-stage CI/CD pipeline to automate the build and testing processes o
 ### 5.2.2 Test Stage
 - In the test stage, we retrieve the recently pushed image from our container registry.
 <div align="center">
-<img src="../report/img/CICD_1.png" alt="CI/CD" width="600"/>
+<img src="report/img/CICD_1.png" alt="CI/CD" width="600"/>
 </div>
 
 - Using the "docker run" command, we deploy the image as a container and execute our application within it.
 - This step allows us to validate whether our application runs as expected and performs the desired functionalities.
 - By checking the behavior and output of our application in the containerized environment, we can identify any potential issues or bugs.
 <div align="center">
-<img src="../report/img/CICD_2.png" alt="CI/CD" width="600"/>
+<img src="report/img/CICD_2.png" alt="CI/CD" width="600"/>
 </div>
 
 By dividing our CI/CD pipeline into these two stages, we can ensure a streamlined and automated process for building and testing our application. The build stage ensures that our application is properly packaged, while the test stage allows us to validate its functionality within a controlled containerized environment. This approach helps us identify and address any issues early in the development cycle, ensuring a more reliable and robust application deployment.
@@ -980,7 +980,7 @@ By following these steps, you can set up and launch our application on your loca
 
 ## Appendix C: Gantt chart
 <div align="center">
-<img src="../report/img/GanttChart.png" alt="Gantt Chart" width="600"/>
+<img src="report/img/GanttChart.png" alt="Gantt Chart" width="600"/>
 </div>
 
 ## Appendix D: Product Backlog
